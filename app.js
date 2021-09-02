@@ -23,12 +23,13 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.render('index')
+    res.sendFile(__dirname + './public/index.html')
 })
 
 
 app.get('/student', (req, res) => {
-    res.render('student')
+    res.sendFile(__dirname + './public/views/student.html')
+    
 })
 
 const server = app.listen(process.env.PORT, () => {
