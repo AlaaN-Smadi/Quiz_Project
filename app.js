@@ -31,7 +31,7 @@ app.get('/student', (req, res) => {
     res.render('student')
 })
 
-const server = app.listen(process.env.PROT, () => {
+const server = app.listen(process.env.PORT, () => {
     console.log("server is running")
 })
 
