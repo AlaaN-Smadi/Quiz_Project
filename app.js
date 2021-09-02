@@ -42,7 +42,7 @@ const server = app.listen(port , () => {
     console.log(`server is running ${port}`)
 
 
-
+})
 
 
 
@@ -82,6 +82,7 @@ io.on('connection', socket => {
     })
 
 })
+
 
 
 
