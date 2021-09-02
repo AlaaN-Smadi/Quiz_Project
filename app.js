@@ -9,6 +9,8 @@ require('dotenv').config();
 
 
 
+
+
 // const server = require('http').Server(app)
 
 const { v4: uuidV4 } = require('uuid')
@@ -31,11 +33,12 @@ app.get('/student', (req, res) => {
     res.render('student')
 })
 
+
 const port = process.env.PORT || 4121
 
 const server = app.listen(port , () => {
     console.log(`server is running ${port}`)
-})
+
 
 
 
