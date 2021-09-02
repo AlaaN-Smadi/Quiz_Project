@@ -4,7 +4,9 @@ const app = express()
 var http = require('http').Server(app);
 
 var socketio = require('socket.io')
+
 require('dotenv').config();
+
 
 
 
@@ -34,9 +36,12 @@ app.get('/student', (req, res) => {
 
 
 
-const server = app.listen(process.env.PORT, () => {
-    console.log("server is running")
-})
+const port = process.env.PORT
+
+const server = app.listen(port , () => {
+    console.log(`server is running ${port}`)
+
+
 
 
 
@@ -77,9 +82,6 @@ io.on('connection', socket => {
     })
 
 })
-
-
-
 
 
 
