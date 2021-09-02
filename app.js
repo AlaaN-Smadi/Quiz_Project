@@ -25,12 +25,12 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + './public/index.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 
 app.get('/student', (req, res) => {
-    res.sendFile(__dirname + './public/views/student.html')
+    res.sendFile(__dirname + '/student.ejs')
     
 })
 
