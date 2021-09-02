@@ -34,7 +34,7 @@ app.get('/student', (req, res) => {
 })
 
 
-const port = process.env.PORT || 4121
+const port = process.env.PORT
 
 const server = app.listen(port , () => {
     console.log(`server is running ${port}`)
