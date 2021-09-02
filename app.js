@@ -25,12 +25,16 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
+
     res.sendFile(__dirname + '/public/index.html')
+
 })
 
 
 app.get('/student', (req, res) => {
-    res.sendFile(__dirname + '/views/student.html')
+
+  res.sendFile(__dirname + '/views/student.html')
+
     
 })
 
@@ -40,6 +44,7 @@ const port = process.env.PORT
 
 const server = app.listen(port , () => {
     console.log(`server is running ${port}`)
+
 
 
 })
