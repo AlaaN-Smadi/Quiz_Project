@@ -25,12 +25,16 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + '/index.html')
+
+    res.sendFile(__dirname + '/public/index.html')
+
 })
 
 
 app.get('/student', (req, res) => {
-    res.sendFile(__dirname + '/student.ejs')
+
+  res.sendFile(__dirname + '/views/student.html')
+
     
 })
 
@@ -43,6 +47,7 @@ const server = app.listen(port , () => {
 
 
 
+})
 
 
 
@@ -82,9 +87,6 @@ io.on('connection', socket => {
     })
 
 })
-
-
-
 
 
 
