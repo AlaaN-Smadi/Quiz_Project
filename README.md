@@ -53,4 +53,10 @@ https://github.com/AlaaN-Smadi/Quiz_Project
 
 * UML
 
-![]()
+Class Digram
+
+![UML1](classdigram.drawio.png)
+
+Sequence Digram
+
+![UML2](sequenceUML.png)
